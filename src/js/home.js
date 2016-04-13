@@ -13,21 +13,31 @@ export default class Home extends Component {
         <Paper zDepth={4}>
           <h1>GitHub Users</h1>
             <List>
-              <ListItem className='list-item'>
-                <Link to={'/jisaacks/orgs'}>jisaacks</Link>
-              </ListItem>
-              <ListItem className='list-item'>
-                <Link to={'/wycats/orgs'}>wycats</Link>
-              </ListItem>
-              <ListItem className='list-item'>
-                <Link to={'/sindresorhus/orgs'}>sindresorhus</Link>
-              </ListItem>
-              <ListItem className='list-item'>
-                <Link to={'/addyosmani/orgs'}>addyosmani</Link>
-              </ListItem>
-              <ListItem className='list-item'>
-                <Link to={'/dhh/orgs'}>dhh</Link>
-              </ListItem>
+              <Link to={'/jisaacks/orgs'}>
+                <ListItem className='list-item' rightAvatar={<i className='fa fa-user'/>}>
+                  jisaacks
+                </ListItem>
+              </Link>
+              <Link to={'/wycats/orgs'}>
+                <ListItem className='list-item' rightAvatar={<i className='fa fa-user'/>}>
+                  wycats
+                </ListItem>
+              </Link>
+              <Link to={'/sindresorhus/orgs'}>
+                <ListItem className='list-item' rightAvatar={<i className='fa fa-user'/>}>
+                  sindresorhus
+                </ListItem>
+              </Link>
+              <Link to={'/addyosmani/orgs'}>
+                <ListItem className='list-item' rightAvatar={<i className='fa fa-user'/>}>
+                  addyosmani
+                </ListItem>
+              </Link>
+              <Link to={'/dhh/orgs'}>
+                <ListItem className='list-item' rightAvatar={<i className='fa fa-user'/>}>
+                  dhh
+                </ListItem>
+              </Link>
             </List>
         </Paper>
       </div>

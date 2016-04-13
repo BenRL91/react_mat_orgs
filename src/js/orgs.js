@@ -29,7 +29,7 @@ export default class Orgs extends Component {
   }
   componentWillMount(){
     let { user_name } = this.props.params
-    ajax(`https://api.github.com/users/${user_name}/orgs?access_token=438a69864df30bc58342daf03b8e635675a4bac6`).then( orgs=>{
+    ajax(`https://api.github.com/users/${user_name}/orgs`).then( orgs=>{
       this.setState({ orgs })
     })
   }

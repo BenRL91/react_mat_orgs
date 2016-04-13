@@ -3,3 +3,22 @@
 // Turn on freq used libraries
 // @import 'normalize-css/normalize';
 // @import 'font-awesome/scss/font-awesome';
+.app {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 5px solid black;
+}
+a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 5%;
+  &:hover {
+    text-decoration: underline;
+  }
+}
